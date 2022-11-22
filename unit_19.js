@@ -146,20 +146,20 @@ function t11() {
     } else {
         div11.setAttribute('src', 'img/1.png');
     }
-  
- 
+
+
 }
 
- div11.onmouseenter = t11;
- div11.onmouseleave = t11;
+div11.onmouseenter = t11;
+div11.onmouseleave = t11;
 // ваше событие здесь!!!
 
 // Task 12 ============================================
 /*  Дан блок .div-12. Добавьте на него событие mousedown - при нажатии кнопки мыши - добавляйте ему класс active. */
- let div12 = document.querySelector('.div-12'); 
+let div12 = document.querySelector('.div-12');
 // функцию пишите самостоятельно
 function t12() {
-     document.oncontextmenu = () => false;
+    document.oncontextmenu = () => false;
     div12.classList.add('active');
 }
 
@@ -176,7 +176,7 @@ div12.onmousedown = () => {
 let div13 = document.querySelector('.div-13');
 function t13() {
     if (div13.classList.contains('active') == true) {
-        div13.classList.remove('active'); 
+        div13.classList.remove('active');
     } else {
         div13.classList.add('active');
     }
@@ -239,7 +239,7 @@ document.querySelector('.b-17_off').onclick = t17Off;
 let div18 = document.querySelector('.div-18');
 function t18() {
     console.log(getComputedStyle(div18).width);
-    
+
     div18.innerHTML = `${getComputedStyle(div18).width}`;
 }
 // ваше событие здесь!!!
@@ -263,12 +263,14 @@ div19.onmouseout = t19;
 
 let prog = document.querySelector('progress');
 
- let progValue = 10;
+let progValue = 10;
 function t20() {
     progValue++;
     console.log(prog);
     prog.value = progValue;
-    
+
 }
 prog.onmousemove = t20;
 // ваше событие здесь!!!
+
+console.log('test2');
